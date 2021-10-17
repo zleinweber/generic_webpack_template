@@ -5,11 +5,24 @@ module.exports = {
   mode: 'development',
   entry: "./src/index.js",
   output: {
-    filename: 'bundle.js',
+    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
-  devtool: 'inline-source-map',
+  optimization: {
+    moduleIds: 'deterministic',
+    runtimeChunk: 'single',
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all'
+        }
+      }
+    }
+  },
+  devtool: 'source-map',
   devServer: {
     static: './dist',
     compress: true,
