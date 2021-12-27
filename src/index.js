@@ -1,19 +1,9 @@
-import printMe from "./print.js";
-
-function component() {
+function helloWorld() {
   const element = document.createElement("div");
-  const btn = document.createElement("button");
 
-  // Lodash, now imported by this script
-  element.innerHTML = "Hello World!";
-  element.classList.add("hello");
-
-  btn.innerHTML = "Click me and check the console!";
-  btn.onclick = printMe;
-
-  element.appendChild(btn);
+  element.innerHTML = "WEBPACK_PROJECT Hello World!!";
 
   return element;
 }
 
-document.body.appendChild(component());
+document.body.appendChild(helloWorld());

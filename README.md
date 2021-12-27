@@ -1,2 +1,4 @@
-# webpack_starter
-A template for javscript / webpack projects
+# WEBPACK_PROJECT
+
+Readme for WEBPAKC_PROJECT
+

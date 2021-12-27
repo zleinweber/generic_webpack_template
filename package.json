@@ -1,14 +1,14 @@
 {
-  "name": "webpack_starter",
+  "name": "WEBPACK_PROJECT",
   "version": "1.0.0",
-  "description": "A template for javscript / webpack projects",
+  "description": "WEPACK_PROJECT",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier": "prettier --write src",
     "lint": "eslint src",
-    "build": "webpack --config webpack.config.js",
-    "start": "webpack serve --open"
+    "build": "webpack --config webpack.config.js --env title='WEBPACK_PROJECT' --env production",
+    "dev": "webpack serve --open --env title='WEBPACK_PROJECT Dev' --env development"
   },
   "repository": {
     "type": "git",
