@@ -15,7 +15,7 @@ PROJECT_NAME="$1"
 
 sed -i "s/WEBPACK_PROJECT/$PROJECT_NAME/g" README.md package.json src/index.js
 sed -i "/^package-lock.json/d" .gitignore
-sed -i "5,$d" README.md
+sed -i '5,$d' README.md
 
 cat <<EOF
 ./initialize.sh completed for $PROJECT_NAME
