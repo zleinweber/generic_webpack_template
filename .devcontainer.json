@@ -1,8 +1,13 @@
 {
     "build": { "dockerfile": "Dockerfile" },
-    "extensions": [
-        "dbaeumer.vscode-eslint",
-        "DavidAnson.vscode-markdownlint"
-    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "DavidAnson.vscode-markdownlint"
+            ]
+        }
+
+    },
     "forwardPorts": [8080]
 }
